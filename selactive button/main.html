@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <h2>selactive button</h2>
+    <input type="radio" value="card" id="card" class="box-child" name="met" onclick=" chackbutton()" required style="color: transparent;background-color: transparent;"> card
+    <input type="radio" value="paypal" id="paypal" name="met" onclick=" chackbutton()" required> paypal
+    <input type="radio" value="paypal" id="net" name="met" onclick=" chackbutton()" required> net banking
+
+    <div class="box">
+        <button type="radio" class="box-child" id="box1" onclick="myFunction1()"><i class="fa fa-credit-card-alt"
+                style="padding:10%;"></i></button>
+        <button type="radio" value="card" id="card" name="met" onclick=" chackbutton()"><i
+                class="fa fa fa-paypal" style="padding:10%;"></i></button>
+        <button type="radio" value="card" id="card" name="met" onclick=" chackbutton()"><i
+                class="fa fa fa-bank" style="padding:10%;"></i></div>
+    </div>
+
+
+    <a id="anc" href="https://www.apple.com/shop/buy-iphone/iphone-13-pro"><button type="button">proceed</button></a>
+    <script>
+        function chackbutton() {
+            if (document.getElementById('card').checked) {
+                document.getElementById("anc").href = "www.google.com";
+            }
+            else if (document.getElementById('paypal').checked) {
+                document.getElementById("anc").href = "https://www.paypal.com/in/webapps/mpp/home?kid=p39982204948&gclid=EAIaIQobChMIqNmu3PK19QIVkZJmAh1IPAB7EAAYASAAEgJB1PD_BwE&gclsrc=aw.ds";
+            }
+            else if (document.getElementById('net').checked) {
+                document.getElementById("anc").href = "https://v1.hdfcbank.com/assets/popuppages/netbanking.htm";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
